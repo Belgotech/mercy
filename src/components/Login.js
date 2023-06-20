@@ -14,7 +14,7 @@ const Login = () =>{
 
                 <div 
                     className="login-button google"
-                    onClick={() => auth.signInWithRedirect(new firebase.apps.GoogleAuthProvider())}
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                     
                 >
                     <GoogleOutlined /> Sign in with Google
@@ -24,7 +24,7 @@ const Login = () =>{
 
                 <div 
                     className="login-button facebook"
-                    onClick={() => auth.signInWithRedirect(new firebase.apps.FacebookAuthProvider())}
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
                 >
                     <FacebookOutlined /> Sign in with Facebook 
                     
