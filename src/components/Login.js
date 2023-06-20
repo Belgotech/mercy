@@ -10,7 +10,15 @@ const Login = () =>{
                 <div 
                     className="login-button google"
                 >
+                    <GoogleOutlined /> Sign in with Google
+                </div>
+                
+                <br /> <br />
 
+                <div 
+                    className="login-button facebook"
+                >
+                    <FacebookOutlined /> Sign in with Facebook 
                 </div>
             </div>
         </div>
