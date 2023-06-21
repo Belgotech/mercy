@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../Firebase";
@@ -10,6 +10,8 @@ import { useAuth } from "../Context/AuthContext";
 const Chats = () =>{
 
     const history = useHistory()
+
+    const { user } = useAuth
 
     const handleLogOut = async () =>{
         await auth.signOut()
