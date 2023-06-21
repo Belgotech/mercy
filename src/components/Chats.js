@@ -5,6 +5,7 @@ import { auth } from "../Firebase";
 // import Img from "../Asset/Pink Dark Blue Modern Elegant Letter B Logo (1).png";
 
 import { useAuth } from "../Context/AuthContext";
+import axios from "axios";
 
 
 const Chats = () =>{
@@ -18,6 +19,15 @@ const Chats = () =>{
 
         history.push('/')
     }
+
+    useEffect (() =>{
+        if (!user) {
+          history.push('/')  
+
+          return;
+        }
+        axios.get('https://api.cchatengine.io/users/me', )
+    }, [user, history])
 
     return(
         <div className="chats-page">
