@@ -3,7 +3,7 @@ import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import "firebase/app";
 
 import { auth } from "../Firebase";
-import { fireEvent } from "@testing-library/react";
+// import { fireEvent } from "@testing-library/react";
 import firebase from "firebase/app";
 
 const Login = () =>{
