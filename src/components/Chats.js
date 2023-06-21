@@ -4,6 +4,8 @@ import { ChatEngine } from "react-chat-engine";
 import { auth } from "../Firebase";
 // import Img from "../Asset/Pink Dark Blue Modern Elegant Letter B Logo (1).png";
 
+import { useAuth } from "../Context/AuthContext";
+
 
 const Chats = () =>{
 
