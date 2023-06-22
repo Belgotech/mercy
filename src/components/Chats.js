@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 import { Avatar, ChatEngine } from "react-chat-engine";
 import { auth } from "../Firebase";
 // import Img from "../Asset/Pink Dark Blue Modern Elegant Letter B Logo (1).png";
@@ -44,12 +44,12 @@ const Chats = () =>{
             setLoading(false)
         })
         .catch(()=>{
-            let formdata = new formdata();
+            let formdata = new FormData();
             formdata.append('email', user.email);
-            formdata.append('username', user.displyName);
+            formdata.append('username', user.email);
             formdata.append('secret', user.uid)
 
-            getFile(user.photoURL)
+            getFile(user.photoUrl)
             .then((avatar) =>{
                 formdata.append('avatar', avatar, avatar.name)
 
